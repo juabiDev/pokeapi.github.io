@@ -82,22 +82,45 @@ p {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 70% 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     row-gap: 5rem;
-    width: 90%;
+    padding: 5rem;
 }
+
+aside {
+    order: -1;
+}
+
+@media (min-width: 1028px) {
+    main {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        align-items: inherit;
+    }
+
+    aside {
+        order: 1;
+    }
+}
+
 
 .contenedor {
     margin: 0 auto;
-    padding: 3rem;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 2rem;
     place-items: center;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }   
 }
 
 .pokemon-card {
@@ -118,6 +141,7 @@ aside {
     text-align: center;
     background-color: var(--blanco);
     height: fit-content;
+    width: fit-content;
     padding-inline: 1rem;
 
     & ul {
