@@ -31,8 +31,6 @@ Si observamos al momento de hacer la peticion a la API utilizando una URL para b
 
 Tambien podemos ver que en el atributo abilities se encuentran los ataques especiales del pokemon.
 
-Dale Lu vos podes♥
-
 # Aclaraciones
 
 Para ahorrar tiempo ya tenemos la estructura HTML y el estilo CSS
